@@ -1,0 +1,176 @@
+{{!-- <input type="file" name="movie-cover-image" /> --}}
+
+<section style="background-color: #eee;">
+  <div class="container py-5">
+    <div class="row">
+      
+    </div>
+
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="card mb-4">
+          <div class="card-body text-center">
+            <img src={{pet.imgPath}} alt="profile picture"
+              class="rounded-circle img-fluid" style="width: 150px;">
+            <h5 class="my-3">{{pet.name}}</h5>
+            <p class="text-muted mb-1">{{pet.ageYears}} years and {{pet.ageMonths}} months old, {{pet.gender}} {{pet.typeOfPet}}</p>
+            <p class="text-muted mb-4">{{pet.breed}}</p>
+            <div class="d-flex justify-content-center mb-2">
+              <form action="/me/edit" method="post">
+      
+                <button type="button" class="btn btn-outline-secondary me-3"><a class="link-dark" href="#">Edit Profile</a></button>
+              </form>
+              <button type="button" class="btn btn-outline-secondary me-3"><a class="link-dark" href="/user/{{id}}">My Page</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-8">
+        <div class="card mb-4">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-sm-3">
+                <p class="mb-0">Weight</p>
+              </div>
+              <div class="col-sm-9">
+                <p class="text-muted mb-0">{{pet.weight}}</p>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-sm-3">
+                <p class="mb-0">Microchipped</p>
+              </div>
+              <div class="col-sm-9">
+                <p class="text-muted mb-0">{{pet.microchipped}}</p>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-sm-3">
+                <p class="mb-0">Spayed or Neutered</p>
+              </div>
+              <div class="col-sm-9">
+                <p class="text-muted mb-0">{{pet.spayedOrNeutered}}</p>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-sm-3">
+                <p class="mb-0">House trained</p>
+              </div>
+              <div class="col-sm-9">
+                <p class="text-muted mb-0">{{pet.houseTrained}}</p>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-sm-3">
+                <p class="mb-0">Friendly with dogs</p>
+              </div>            
+            <div class="col-sm-9">
+                <p class="text-muted mb-0">{{pet.friendlyWithDogs}}</p>
+              </div>
+            </div>
+            <hr>         
+            <div class="row">
+              <div class="col-sm-3">
+                <p class="mb-0">Friendly with cats</p>
+              </div>            
+            <div class="col-sm-9">
+                <p class="text-muted mb-0">{{pet.friendlyWithCats}}</p>
+              </div>
+            </div>
+            <hr> 
+            <div class="row">
+              <div class="col-sm-3">
+                <p class="mb-0">Potty schedule</p>
+              </div>            
+            <div class="col-sm-9">
+                <p class="text-muted mb-0">{{pet.pottySchedule}}</p>
+              </div>
+            </div>
+            <hr> 
+            <div class="row">
+              <div class="col-sm-3">
+                <p class="mb-0">Energy</p>
+              </div>            
+            <div class="col-sm-9">
+                <p class="text-muted mb-0">{{pet.energy}}</p>
+              </div>
+            </div> 
+            <hr>
+            <div class="row">
+              <div class="col-sm-3">
+                <p class="mb-0">Feeding schedule</p>
+              </div>            
+            <div class="col-sm-9">
+                <p class="text-muted mb-0">{{pet.feedingSchedule}}</p>
+              </div>
+            </div>                        
+            <hr> 
+            <div class="row">
+              <div class="col-sm-3">
+                <p class="mb-0">Can be alone</p>
+              </div>            
+            <div class="col-sm-9">
+                <p class="text-muted mb-0">{{pet.canBeAlone}}</p>
+              </div>
+            </div> 
+            <hr>   
+            <div class="row">
+              <div class="col-sm-3">
+                <p class="mb-0">Medication</p>
+              </div>            
+            <div class="col-sm-9">
+                <p class="text-muted mb-0">{{pet.medication}}</p>
+              </div>
+            </div> 
+            <hr>   
+            <div class="row">
+              <div class="col-sm-3">
+                <p class="mb-0">Other care info</p>
+              </div>            
+            <div class="col-sm-9">
+                <p class="text-muted mb-0">{{pet.otherCareInfo}}</p>
+              </div>
+            </div> 
+            <hr>     
+            <div class="row">
+              <div class="col-sm-3">
+                <p class="mb-0">Vet info</p>
+              </div>            
+            <div class="col-sm-9">
+                <p class="text-muted mb-0">{{pet.vetName}}</p>
+              </div>
+            </div> 
+            <hr>
+            <div class="row">
+              <div class="col-sm-3">
+                <p class="mb-0">Additional Vet info</p>
+              </div>            
+            <div class="col-sm-9">
+                <p class="text-muted mb-0">{{pet.additionalVetInfo}}</p>
+              </div>
+            </div> 
+            <hr>    
+            <div class="row">
+              <div class="col-sm-3">
+                <p class="mb-0">Photo gallery</p>
+              </div>            
+            <div class="col-sm-9">
+                <p class="text-muted mb-0">{{pet.photo}}</p>           
+            </div>
+            </div> 
+            <hr>                                                                   
+            <div class="row">
+              <div class="col-sm-3">
+              <p class="mb-0">About</p>
+              </div>            
+            <div class="col-sm-9">
+              <p class="text-muted mb-0">{{pet.about}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

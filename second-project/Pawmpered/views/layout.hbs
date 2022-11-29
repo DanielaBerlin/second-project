@@ -1,0 +1,55 @@
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>{{appTitle}}</title>
+    <!--bootstrap-->
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"/>
+    <!-- MDB -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.0/mdb.min.css"/>
+  </head>
+
+  <body>
+    <nav class="navbar fixed-top navbar-light bg-light navbar-expand-lg">
+  <!-- Container wrapper -->
+  <div class="container">
+    <!-- Navbar brand -->
+    <a class="navbar-brand me-2">
+      <img
+        src="/images/logo-navbar.png"
+        height="40"
+        alt="Pawmpered Logo"
+        loading="lazy"
+        style="margin-top: -1px;"
+      />
+    </a>
+      <!-- Left links -->
+
+      <div class="d-flex align-items-center">
+        <button type="button" class="btn btn-outline-secondary me-3">
+          <a class="link-dark" href="auth/login">Login</a>
+        </button>
+        <button type="button" class="btn btn-outline-secondary me-3">
+          <a class="link-dark" href="auth/signup">Sign up for free</a>
+        </button>
+        <button type="button" class="btn btn-outline-secondary me-3">
+          <a class="link-dark" href="/auth/logout">Log Out</a>
+        </button>
+    </div>
+    <!-- Collapsible wrapper -->
+  </div>
+  <!-- Container wrapper -->
+</nav>
+    {{{body}}}
+
+    <script src="/js/script.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.0/mdb.min.js"></script>
+  </body>
+
+</html>
